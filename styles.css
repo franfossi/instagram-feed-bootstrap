@@ -1,0 +1,41 @@
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: white;
+    background-color: gray;
+}
+
+.fas {
+    color: black;
+}
+
+.row-pills {
+    
+}
+
+.card {
+    height: 350px;
+    width: 500px;
+
+}
+
+.card-2 {
+    height: 600px;
+}
+
+.card-header {
+    justify-content: center;
+}
+    
+#card-11 {
+    
+    
+}
+
+#card-12 {
+    
+    
+}
+
+#card-13 {
+    
+   
+}

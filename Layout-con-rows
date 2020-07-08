@@ -1,0 +1,22 @@
+      
+        <!--Layout 1 con rows --            
+        <div class="row my-md-3">
+            <div class="col-md-4 col-lg bg-white"> <img><img src="https://cdn.pixabay.com/photo/2015/07/09/19/32/dog-838281_960_720.jpg" alt="foto1" style="width:500px;height:300px"> </div>
+            <div class="col-md-4 col-lg bg-warning"><img src="https://cdn.pixabay.com/photo/2015/06/08/15/02/pug-801826__340.jpg" alt="foto2" style="width:500px;height:300px"></div>
+            <div class="col-md-4 col-lg bg-white">Video 1</div>
+        </div>-->
+
+        <!--Layout 2 con rows--
+        <div class="row my-md-3">
+            <div class="col-md-4 col-lg bg-white">col</div>
+            <div class="col-md-4 col-lg">col</div>
+            <div class="col-md-4 col-lg bg-white">col</div>
+            <div class="w-100"></div>
+            <div class="col-md-4 col-lg">col</div>
+            <div class="col-md-4 col-lg bg-white">col</div>
+            <div class="col-md-4 col-lg">col</div>
+            <div class="w-100"></div>
+            <div class="col-md-4 col-lg bg-white">col</div>
+            <div class="col-md-4 col-lg">col</div>
+            <div class="col-md-4 col-lg bg-white">col</div>
+        </div>-->
