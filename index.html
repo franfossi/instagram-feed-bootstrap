@@ -13,35 +13,39 @@
 
 </head>
 
-<body class="bg-secondary h-100"> 
-    
+    <body class="bg-secondary h-100"> 
 
-<!---Comienza Navbar>-->
-        <!--<nav class="navbar navbar-expand-lg navbar-light bg-light  position-static">-->
-          <div class="container-fluid p-0 fixed-top"> 
+        <!---Comienza Navbar>-->
+        <!--<nav class="navbar navbar-expand-lg navbar-light bg-light">-->
+        <div class="container-fluid p-0 fixed-top"> 
             <div class="row bg-light d-flex justify-content-center">
-                <!--<div class="col-1"></div>-->
-                <div class="p-1 flex-grow-1 ml-4">
+                <div class="p-1 flex-grow-1 ml-5">
                     <i class="fab fa-instagram fa-x"></i>
-                    <a class="navbar-brand font-italic-weight-bold">Instagram</a>
+                    <a class="navbar-brand font-italic weight-bold">Instagram</a>
                 </div>
-                <!--<div class="col-5"></div>-->
-                <div class="dropdown p-1 mr-3">
-                    <button type="button" class="btn btn-success">Create a new post</button>
+                
+               
+                <!--Comienza grupo botón dropdown-->
+                <div class="row p-1 mr-5">
+                    
+                    <button type="button" class="btn btn-success p-1" data-toggle="modal" data-target="#exampleModal">
+                        Create a new post</button>
+
                     <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <i class="fa fa-cog" aria-hidden="true"></i>
+                            <i class="fa fa-cog" aria-hidden="true"></i>
                     </button>
+
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                        <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
                     </div>
                 </div><!--Cierre div dropdown -->
-                <!--<div class="col-1"></div>-->
-            </div><!--Cierre row 1 del nav bar-->
-      
-<!--Row con Botones nav-pills para cambio de vista / página-->
+            </div><!--Cierre row 1 -->
+        <!--</nav>-->
+
+            <!--Sección Row con Botones Nav-pills para cambio de vista / página-->
             <div class="row bg-light justify-content-center">
            
                 <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
@@ -55,108 +59,218 @@
                     </li>
                 </ul>
             </div>
-          </div><!--Cierre container-fluid-->
-        <!--</nav>-->
-      
-    
-                   
-             <!----Link a las vistas -->
-<div class="tab-content mt-md-5" id="pills-tabContent">
-
-    <div class="tab-pane fade show active mt-md-5" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"><div class=""></div>
-
-        <!--Layout con cards-->
-        <div class="card-group">
-            <div class="card" id="card-11">
-                <img src="https://cdn.pixabay.com/photo/2014/02/24/08/28/huskies-273409__340.jpg" class="card-img-top" alt="Foto 1">
-            </div>
-            <div class="card" id="card-12"> 
-                <img src="https://cdn.pixabay.com/photo/2016/02/07/21/03/computer-1185626_960_720.jpg" class="card-img-top" alt="Foto 2">
-            </div>
-            <div class="card" id="card-13">
-                <img src="https://cdn.pixabay.com/photo/2018/02/07/11/49/social-media-3136897_960_720.jpg" class="card-img-top" alt="Foto 3">
-            </div>  
+        <!--Cierre div container-fluid-->    
         </div>
+        
+        
+        <!----Link a las vistas de las páginas-->
+        <div class="tab-content mt-md-5" id="pills-tabContent">
 
-        <div class="card-group">
-            <div class="card">
-                <img src="https://cdn.pixabay.com/photo/2014/12/10/05/50/english-bulldog-562723__340.jpg" class="card-img-top" alt="Foto 4">
+            <!--Sección Layout Fotos con Cards "pills-home"-->
+            <div class="tab-pane fade show active mt-md-5" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"><div class=""></div>
+
+                <div class="card-group">
+                    <div class="card img11"></div>
+                    <div class="card img12"></div>
+                    <div class="card img13"></div>  
+                </div>
+
+                <div class="card-group">
+                    <div class="card img21"></div>
+                    <div class="card img22"></div>
+                    <div class="card img23"></div>  
+                </div>
+
+                <div class="card-group">
+                    <div class="card img31"></div>
+                    <div class="card img32"></div>
+                    <div class="card img33"></div>
+                </div>
+            <!--Cierre sección layout Fotos "pills-home"-->
             </div>
-            <div class="card">
-                <img src="https://cdn.pixabay.com/photo/2019/10/27/13/49/lion-4581841__340.jpg" class="card-img-top" alt="Foto 5">
+
+            <!--Sección layout Posts "pills-post"-->
+            <div class="tab-pane fade mt-md-5" id="pills-post" role="tabpanel" aria-labelledby="pills-post-tab">
+
+                <div class="flex p-5 margin-auto">
+                                     
+                    <div class="row justify-content-center"> 
+                        <div class="col-md-4 bg-white">
+
+                            <div class="card-header">
+                                <div class="d-flex justify-content-between align-items-center p-2">
+                                    <h4 class="card-header">My First Photo</h4>
+                                    <p class="card-header m-0">12/24</p> 
+                                </div>
+                                <div class="img11">
+                                </div>
+                            </div>
+                       
+                            <div class="card-body">
+                                <h5 class="card-title">23 Likes</h5>
+                                <p class="card-text">This is my first Photo of the feed. This is multi line comment for testing purposes. I am learning to code with #BreatheCode.</p>
+                            </div>
+
+                            <div class="card-footer d-flex justify-content-between">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                    <small class="text-muted mx-2">Comment</small>
+                                </div>
+                                <div>
+                                    <i class="fas fa-ellipsis-v "></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="row justify-content-center mt-4"> 
+                        <div class="col-md-4 bg-white">
+
+                            <div class="card-header">
+                                <div class="d-flex justify-content-between align-items-center p-2">
+                                    <h4 class="card-header">My First Photo</h4>
+                                    <p class="card-header m-0">12/24</p> 
+                                </div>
+                                <div class="img12">
+                                </div>
+                            </div>
+                       
+                            <div class="card-body">
+                                <h5 class="card-title">23 Likes</h5>
+                                <p class="card-text">This is my first Photo of the feed. This is multi line comment for testing purposes. I am learning to code with #BreatheCode.</p>
+                            </div>
+
+                            <div class="card-footer d-flex justify-content-between">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                    <small class="text-muted mx-2">Comment</small>
+                                </div>
+                                <div>
+                                    <i class="fas fa-ellipsis-v "></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-center mt-4"> 
+                        <div class="col-md-4 bg-white">
+
+                            <div class="card-header">
+                                <div class="d-flex justify-content-between align-items-center p-2">
+                                    <h4 class="card-header">My First Photo</h4>
+                                    <p class="card-header m-0">12/24</p> 
+                                </div>
+                                <div class="img31">
+                                </div>
+                            </div>
+                       
+                            <div class="card-body">
+                                <h5 class="card-title">23 Likes</h5>
+                                <p class="card-text">This is my first Photo of the feed. This is multi line comment for testing purposes. I am learning to code with #BreatheCode.</p>
+                            </div>
+
+                            <div class="card-footer d-flex justify-content-between">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                    <small class="text-muted mx-2">Comment</small>
+                                </div>
+                                <div>
+                                    <i class="fas fa-ellipsis-v "></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-center mt-4"> 
+                        <div class="col-md-4 bg-white">
+
+                            <div class="card-header">
+                                <div class="d-flex justify-content-between align-items-center p-2">
+                                    <h4 class="card-header">My First Photo</h4>
+                                    <p class="card-header m-0">12/24</p> 
+                                </div>
+                                <div class="img21">
+                                </div>
+                            </div>
+                       
+                            <div class="card-body">
+                                <h5 class="card-title">23 Likes</h5>
+                                <p class="card-text">This is my first Photo of the feed. This is multi line comment for testing purposes. I am learning to code with #BreatheCode.</p>
+                            </div>
+
+                            <div class="card-footer d-flex justify-content-between">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                    <small class="text-muted mx-2">Comment</small>
+                                </div>
+                                <div>
+                                    <i class="fas fa-ellipsis-v "></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-center mt-4"> 
+                        <div class="col-md-4 bg-white">
+
+                            <div class="card-header">
+                                <div class="d-flex justify-content-between align-items-center p-2">
+                                    <h4 class="card-header">My First Photo</h4>
+                                    <p class="card-header m-0">12/24</p> 
+                                </div>
+                                <div class="img23">
+                                </div>
+                            </div>
+                       
+                            <div class="card-body">
+                                <h5 class="card-title">23 Likes</h5>
+                                <p class="card-text">This is my first Photo of the feed. This is multi line comment for testing purposes. I am learning to code with #BreatheCode.</p>
+                            </div>
+
+                            <div class="card-footer d-flex justify-content-between">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                    <small class="text-muted mx-2">Comment</small>
+                                </div>
+                                <div>
+                                    <i class="fas fa-ellipsis-v "></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            <!--Cierre Sección layout Posts "pills-post"-->    
             </div>
-            <div class="card">
-                <img src="https://cdn.pixabay.com/photo/2015/08/02/22/38/girl-872149__340.jpg" class="card-img-top" alt="Video 1">
-            </div>  
+
+    <!--Comienzo Sección Ventana Modal-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                           <textarea class="form-control" id="message-text" row="3"></textarea>
+                        </div>
+                        <i class="fas fa-camera"></i>
+                        <i class="fas fa-map-marker-alt"></i>
+                    </form> 
+                </div>
+                
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary">Publish</button>
+                </div>
+            </div>
         </div>
+    </div><!--Fin codigo caja modal-->
 
-        <div class="card-group">
-            <div class="card">
-                <img src="https://cdn.pixabay.com/photo/2016/11/30/20/58/programming-1873854_960_720.png" class="card-img-top" alt="Foto 7">
-            </div>
-            <div class="card">
-                <img src="https://cdn.pixabay.com/photo/2017/09/03/17/26/woman-2711279__340.jpg" class="card-img-top" alt="Foto 8">
-            </div>
-            <div class="card">
-                <img src="https://i.vimeocdn.com/video/863268601_640x360.jpg" class="card-img-top" alt="Ilustración">
-            </div>
-        </div>
-    
- 
-
-</div><!--Cierre div pills-home-->
-
-<!--Layout hoja #2 con Posts-->
-    <div class="tab-pane fade mt-md-5" id="pills-post" role="tabpanel" aria-labelledby="pills-post-tab">
-
-        <div class="row p-5" id="Post">
-            <div class="col-md-4"></div>
-            <div class="card-2 col-md-4 bg-white">
-                <div class="row"> 
-                    <h3 class="card-header">My First Photo</h3>
-                    <div class="col-md-4"></div>
-                    <h4 class="card-header">12/24</h4> 
-                </div>
-                <img src="https://cdn.pixabay.com/photo/2014/02/24/08/28/huskies-273409__340.jpg" class="card-img-top" alt="Foto 1">
-
-                <div class="card-body">
-                    <h5 class="card-title">23 Likes</h5>
-                    <p class="card-text">This is my first ohoto of the feed. This is multi line comment for testing purposes. I am learning to code with #BreatheCode.</p>
-                </div>
-                <div class="card-footer">
-                    <i class="fa fa-heart-o" aria-hidden="true"></i>
-                    <small class="text-muted">Comment</small>
-                </div>
-            </div><!--Cierra div card-2-->
-            <div class="col-md-4"></div>
-        </div><!--Cierra div row-->
-         
-        <div class="row p-5">
-            <div class="col-md-4"></div>
-            <div class="card-2 col-md-4 bg-white">
-                <div class="row"> 
-                    <h3 class="card-header">My First Photo</h3>
-                    <div class="col-md-4"></div>
-                    <h4 class="card-header">12/24</h4> 
-                </div>
-                <img src="https://cdn.pixabay.com/photo/2016/02/07/21/03/computer-1185626_960_720.jpg" class="card-img-top" alt="Foto 1">
-
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-                <div class="card-footer"><small class="text-muted">Last updated 3 mins ago</small>
-                </div>
-            </div>
-            <div class="col-md-4"></div>
-        </div><!--Cierra div class-row-->
-
-    </div><!--Cierre el div pills-post-->
 
 <!---Comienza Bootstrap JS-->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
-</body>
+    </body>
 </html>
